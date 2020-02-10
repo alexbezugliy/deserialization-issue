@@ -31,7 +31,7 @@ namespace DeserializationIssueTest.Controller
         }
         
         [Test]
-        public async Task MustReturnIssueIfInputRunbookHasInvalidFormat()
+        public async Task ShouldNotGenerateMoreErrorsThenExpected()
         {
             new RestAssured()
                 .Given()
